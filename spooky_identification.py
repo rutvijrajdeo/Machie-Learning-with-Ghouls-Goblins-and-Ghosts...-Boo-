@@ -11,8 +11,8 @@ import time
 
 
 
-DATA_PATH = "D:\PycharmProjects\ML Project\ghouls_goblins_ghosts\data\\train.csv"
-test_DATA_PATH = "D:\PycharmProjects\ML Project\ghouls_goblins_ghosts\data\\test.csv"
+DATA_PATH = "train.csv"
+test_DATA_PATH = "test.csv"
 dataset = pd.read_csv(DATA_PATH)
 le=preprocessing.LabelEncoder()
 color=le.fit(dataset['color'])
